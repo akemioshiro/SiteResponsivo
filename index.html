@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- essa linha do charset não tava no vídeo! -->
+    <meta charset="utf-8">
+    <title>Curso de HTML5 e CSS</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script language="javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script>
+        $(function () {
+            $(".scroll, .botao")
+                .click(function(event) {
+                    event.preventDefault();
+                    $("html, body").animate({scrollTop:$(this.hash).offset().top}, 1200);
+                });
+        });
+    </script>
+</head>
+  
+<body>
+    
+    <nav>
+        <a href="#">Mochilando Por Aí</a>
+        <ul>
+            <li><a class="scroll" href="#sobre">SOBRE</a></li>
+            <li><a class="scroll" href="#destinos">DESTINOS</a></li>
+            <li><a class="scroll" href="#fotos">FOTOS</a></li>
+            <li><a class="scroll" href="#contato">CONTATO</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>MOCHILANDO POR AÍ</h1>
+        <p>Site com conteúdo de viagens pelos lugares mais inóspitos da América Latica.</p>
+        <p>
+            Entre os locais viajados estão: Calafate, Buenos Aires, Cusco, Machu Pichu, San Pedro do Atacama e Uyuni.
+        </p>
+        <p>
+            
+        </p>
+        
+            
+        <a href="#sobre" class="botao">VER MAIS</a>
+    </header>
+
+    <section id="sobre">
+        <h2>SOBRE</h2>
+        <p>Viagens pela America Latina. Países visitados: Argentina, Peru e Chile. Neste site serão exibidos fotos e descições dos passeios e lugares.</p>
+        <a href="#contato" class="botao">ENTRE EM CONTATO</a>
+    </section>
+
+    <section id="destinos">
+        <h2>DESTINOS</h2>
+        <div>
+            <img src="img/configs.png" alt="Engrenagens">
+            <h3>Calafate</h3>
+            <p>Localizado na Argentina e fazendo parte da patagônia argentina.</p>
+        </div>
+        <div>
+            <img src="img/hospedagem.png" alt="Servidor">
+            <h3>Machu Pichu</h3>
+            <p>Localizado no Peru e uma das sete maravilhas do mundo.</p>
+        </div>
+        <div>
+            <img src="img/site.png" alt="Navegador">
+            <h3>San Pedro do Atacama</h3>
+            <p>Localizado no Chile e com um dos céus mais estrelados.</p>
+        </div>
+        <div>
+            <img src="img/coracao.png" alt="Coração">
+            <h3>Uyuni</h3>
+            <p>Famoso deserto de sal da Bolivia e onde já foi realizado o Rally Dakar.</p>
+        </div>
+    </section>
+
+    <section id="fotos">
+        <h2>FOTOS</h2>
+        <img src="img/portfolio-1.jpg" alt="cogumelos">
+        <img src="img/portfolio-2.jpeg" alt="Sol no horizonte">
+        <img src="img/portfolio-3.jpeg" alt="Pessoas à beira de vale">
+        <img src="img/portfolio-4.jpg" alt="Floresta nevada">
+        <img src="img/portfolio-5.jpeg" alt="Praia deserta">
+        <img src="img/portfolio-6.jpeg" alt="Alce à beira de rio">
+    </section>
+
+    <section id="contato">
+        <h2>CONTATO</h2>
+        <p>Entre em contato conosco.</p>
+        <div>
+            <img src="img/fone.png" alt="fone">
+            <p><a href="tel:xx55555555">(xx) 5555 5555</a></p>
+        </div>
+
+        <div>
+            <img src="img/contato.png" alt="email">
+            <p><a href="mailto:email@contato.com">email@contato.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Mochilando Por Aí.</p>
+    </footer>
+    
+</body>
+</html>
